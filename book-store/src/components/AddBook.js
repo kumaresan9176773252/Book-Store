@@ -45,8 +45,8 @@ const AddBook = () => {
   return (
     <form onSubmit={handleSubmit}>
       <Box
-        display="flex"
-        flexDirection="column"
+        display={"flex"}
+        flexDirection={"column"}
         justifyContent={"center"}
         maxWidth={700}
         alignContent={"center"}

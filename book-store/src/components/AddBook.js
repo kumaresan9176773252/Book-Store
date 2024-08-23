@@ -26,7 +26,7 @@ const AddBook = () => {
   }
 
   const sendRequest = async () => {
-    await axios.post(`${https://book-store-vr5x.onrender.com}/books`, {
+    await axios.post(`https://book-store-vr5x.onrender.com/books`, {
       name: String(inputs.name),
       author: String(inputs.author),
       description: String(inputs.description),

@@ -12,13 +12,13 @@ const BookDetail = () => {
 
     useEffect(() => {
         const fetchHandler = async () => {
-            await axios.get(`${https://book-store-vr5x.onrender.com}/books/${id}`).then(res => res.data).then(data => setinputs(data.book));
+            await axios.get(`https://book-store-vr5x.onrender.com/books/${id}`).then(res => res.data).then(data => setinputs(data.book));
         }
         fetchHandler();
     }, [id]);
 
     const sendRequest = async () => {
-        await axios.put(`${https://book-store-vr5x.onrender.com}/books/${id}`, {
+        await axios.put(`https://book-store-vr5x.onrender.com/books/${id}`, {
             name: String(inputs.name),
             author: String(inputs.author),
             description: String(inputs.description),

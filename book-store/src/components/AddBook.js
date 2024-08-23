@@ -26,7 +26,7 @@ const AddBook = () => {
   }
 
   const sendRequest = async () => {
-    await axios.post("http://localhost:5000/books", {
+    await axios.post(`${https://book-store-vr5x.onrender.com}/books`, {
       name: String(inputs.name),
       author: String(inputs.author),
       description: String(inputs.description),
@@ -45,8 +45,8 @@ const AddBook = () => {
   return (
     <form onSubmit={handleSubmit}>
       <Box
-        display="flex"
-        flexDirection="column"
+        display={"flex"}
+        flexDirection={"column"}
         justifyContent={"center"}
         maxWidth={700}
         alignContent={"center"}

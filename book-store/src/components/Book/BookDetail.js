@@ -12,13 +12,13 @@ const BookDetail = () => {
 
     useEffect(() => {
         const fetchHandler = async () => {
-            await axios.get(`http://localhost:5000/books/${id}`).then(res => res.data).then(data => setinputs(data.book));
+            await axios.get(`${https://book-store-vr5x.onrender.com}/books/${id}`).then(res => res.data).then(data => setinputs(data.book));
         }
         fetchHandler();
     }, [id]);
 
     const sendRequest = async () => {
-        await axios.put(`http://localhost:5000/books/${id}`, {
+        await axios.put(`${https://book-store-vr5x.onrender.com}/books/${id}`, {
             name: String(inputs.name),
             author: String(inputs.author),
             description: String(inputs.description),
@@ -43,8 +43,8 @@ const BookDetail = () => {
         <div>
             {inputs && (<form onSubmit={handleSubmit}>
                 <Box
-                    display="flex"
-                    flexDirection="column"
+                    display={"flex"}
+                    flexDirection={"column"}
                     justifyContent={"center"}
                     maxWidth={700}
                     alignContent={"center"}
